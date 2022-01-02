@@ -27,9 +27,9 @@ This application allows to view, create and track daily workouts.And able to log
 
 Live deployed link: 
 
+https://fitness-tracker-sk-18.herokuapp.com/?id=61d1504e3dc67a0016e17d83
 
 ## Username:
-https://fitness-tracker-sk-18.herokuapp.com/?id=61d1504e3dc67a0016e17d83
 
 https://github.com/sarasuni
 
