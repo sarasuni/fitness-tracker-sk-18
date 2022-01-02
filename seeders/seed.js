@@ -1,10 +1,14 @@
 const mongoose = require('mongoose');
 const db = require('../models');
+const dotenv =require("dotenv");
 
-mongoose.connect('mongodb+srv://root:workbench2@ft-cluster-m0.8kyvn.mongodb.net/workout?retryWrites=true&w=majority' ||'mongodb://localhost/workout', {
-  useNewUrlParser: true,
-  useFindAndModify: false,
-  useUnifiedTopology: true,
+dotenv.config();
+
+mongoose.connect(process.env.MONGODB_URI||'mongodb://localhost/workout', {
+  useNewUrlParser:true,
+  useUnifiedTopology:true,
+  useCreateIndex: true,
+  useFindAndModify: false
 });
 
 const workoutSeed = [
